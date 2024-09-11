@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Table border="1">
+        <tr>
+            <td>Player</td>
+            <td>Runs</td>
+            <td>Balls</td>
+            <td>4s</td>
+            <td>6s</td>
+            <td>SR</td>
+            <td>Team</td>
+            <td>Opposition</td>
+        </tr>
+
+        {% for c in cricket %}
+        <tr>
+            <td>{{c.player}}</td>
+            <td>{{c.run}}</td>
+            <td>{{c.balls}}</td>
+            <td>{{c.s4}}</td>
+            <td>{{c.s6}}</td>
+            <td>{{c.sr}}</td>
+            <td>{{c.team}}</td>
+            <td>{{c.opponent}}</td>
+        </tr>
+        {% endfor %}
+    </Table>
+</body>
+</html>
